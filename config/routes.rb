@@ -5,7 +5,7 @@ Spree::Core::Engine.routes.append do
 	match 'posts', :to => "posts#index", :as => :posts
    	
    	#admin users
-   	namespace :sysadmin do
+   	namespace :admin do
    		resources :posts 
    		match 'blog', :to => 'posts#new', :as => :blog
    	end

@@ -1,4 +1,4 @@
-class Spree::Posts::Sysadmin::PostsController < Spree::Admin::ResourceController
+class Spree::Posts::Admin::PostsController < Spree::Admin::ResourceController
   
   TinyMCE::Rails::Helper
 

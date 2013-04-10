@@ -1,5 +1,5 @@
 <div id="posts-container">
-  <%= link_to 'New Post', new_sysadmin_post_path, {:class => "button icon-plus"}%>
+  <%= link_to 'New Post', new_admin_post_path, {:class => "button icon-plus"}%>
   
   <h1> Listing Posts </h1>
 
@@ -17,7 +17,7 @@
     <tbody>
   	  <%@posts.each do |p|%>
         <tr data-hook="reports_row">
-          <td><%=link_to p.title, sysadmin_post_path(p)%></td>
+          <td><%=link_to p.title, admin_post_path(p)%></td>
       	  
       	  <%if p.live%>
       	  	<td>Online</td>
@@ -32,8 +32,8 @@
       	  <%end%>
       	  
       	  <td><%=localize p.created_at, format: :long%></td>
-      	  <td><%=link_to 'View', sysadmin_post_path(p)%></td>
-      	  <td><%=link_to 'Edit', edit_sysadmin_post_path(p)%></td>
+      	  <td><%=link_to 'View', admin_post_path(p)%></td>
+      	  <td><%=link_to 'Edit', edit_admin_post_path(p)%></td>
         </tr>
       <%end%>
     </tbody>
