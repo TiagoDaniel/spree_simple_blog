@@ -1,6 +1,6 @@
 class Spree::Posts::Admin::PostsController < Spree::Admin::BaseController
   
-  
+  TinyMCE::Rails::Helper
 
   def index
     @posts = Post.page(params[:page]).per(10).order('created_at desc')
