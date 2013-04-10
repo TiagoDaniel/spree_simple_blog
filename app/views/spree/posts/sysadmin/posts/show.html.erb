@@ -1,0 +1,14 @@
+
+<div id="post-container">
+  <div class="post">
+    <h4><%=@post.title%></h4>
+	<%=@post.body.html_safe%>
+  </div>
+<span class="post-time">
+	<p>Created at: <%=localize @post.created_at, format: :long%></p>
+</span>
+
+<%= link_to 'Back', :back%> |
+<%= link_to 'Edit Post', edit_admin_post_path(@post)%>
+
+</div>
