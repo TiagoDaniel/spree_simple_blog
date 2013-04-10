@@ -1,4 +1,4 @@
-class Spree::Posts::Admin::PostsController < Spree::Admin::BaseController
+class Spree::Posts::Admin::PostsController < Spree::Admin::ResourceController
   
   TinyMCE::Rails::Helper
 
@@ -6,6 +6,9 @@ class Spree::Posts::Admin::PostsController < Spree::Admin::BaseController
     @posts = Post.page(params[:page]).per(10).order('created_at desc')
   end
 
+  def model_class
+    Post
+  end
   
   def show
     @post = Post.find_by_id(params[:id])
