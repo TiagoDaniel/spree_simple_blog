@@ -9,6 +9,10 @@ class Spree::Posts::Admin::PostsController < Spree::Admin::ResourceController
   def model_class
     Post
   end
+
+  def spree
+    main_app
+  end
   
   def show
     @post = Post.find_by_id(params[:id])
