@@ -1,0 +1,57 @@
+/*
+  Place all the styles related to the matching controller here.
+  They will automatically be included in application.css.
+*/
+
+#posts-container a.button{
+  margin-left: 840px;
+
+}
+
+/*#posts-container h1{padding-bottom: 20px;}
+#post-container .post-time{
+	display: block;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	font-size: 10px;
+}
+
+#post-container .post-time p{
+	font-size: 10px;
+}
+
+#post-container .post{
+	padding-bottom: 10px;
+	border-bottom: 1px solid #e6e8ea;
+	background: whit
+
+}*/
+
+
+#posts-container h1{padding-bottom: 20px;}
+
+#posts-page-container .post, #post-container .post{
+    border-bottom: 1px solid #e6e8ea;
+  	background: whitesmoke;
+}
+#posts-page-container .post h4, #post-container .post h4{
+	padding: 10px;
+	background: #e6e8ea;
+	text-align: left;
+}
+#posts-page-container .post p, #post-container .post p{
+	margin-left: 10px;
+}
+
+#post-container .post-time{
+	display: block;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	font-size: 10px;
+}
+
+#post-container .post-time p{
+	font-size: 10px;
+}
+
+
